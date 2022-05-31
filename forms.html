@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+        <style>
+            input{
+                margin-bottom:15px;
+            }
+            body{
+                background-color: aqua;
+            }
+            .reg-form{
+                background-color: white;
+                width: 300px;
+                padding: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .full-width{
+                width:280px
+            }
+            .form-heading{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="form-heading">regestration form</h1>
+        <form class="reg-form">
+            Name:<br><input name="username"class="full-width" placeholder="enter your name;" type="text" required><br>
+            Email:<br><input name="email"class="full-width" type="email" required><br>
+            password:<br><input name="password" class="full-width" type="password"><br>
+            photo:<br><input type="file"><br>
+            ph.no.:<br><input name="phone no." class="full width" type="tel"><br>
+            gender:<br><input value="m" name="gender" type="radio">male</input><input value="f" name="gender" type="radio">female</input><br>
+            interest:<br><input value="politics"name="interest" type="checkbox">politics<input value="sports"name="interest" type="checkbox">sports<input value="other"name="other" type="checkbox">other<br>
+            country:<br><select name="country" class="full-width">
+                <option>india</option>
+                <option>australia</option>
+                <option>unitedstates</option>
+                <option>bangladesh</option>
+                <option>britan</option>
+                <option>sri lanks</option>
+            </select><br>
+            tell us about urself:<br><textarea name="introduction"class="full-width"></textarea><br>
+            <input type="submit"><input type="reset">
+  </form>
+    </body>
+</html>
